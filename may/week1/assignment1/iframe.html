@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>iframe</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .container{
+            display: flex;
+        }
+        #menu div{
+            background-color: chartreuse;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 50px;
+            
+
+        }
+        a{text-decoration: none;}
+        #menu{
+        
+            flex: 1;
+            padding:  10px;
+            height: 500px;
+            margin-right: 10px;
+            border-right: 4px solid rgb(224, 108, 25);
+            border-bottom: 4px solid rgb(194, 74, 18);
+        
+        }
+        #iframe{
+            flex: 4;
+        
+        }
+        iframe{
+            /* background-color: aquamarine; */
+            width: 100%;
+            height: 100vh;
+            border: none;
+
+
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+    <div id="menu">    
+      <div><a href="mobiles.html" target="rightpanel"> MOBILES</a></div>  
+      <div><a href="smarttv.html" target="rightpanel">WATCH</a></div>
+      <div><a href="laptops.html"target="rightpanel">LAPTOPS</a></div>
+      <div><a href="refrigerator.html"target="rightpanel"> REFRIGERATOR</a></div>
+      <div><a href="watch.html"target="rightpanel"> SMART TV</a></div>
+    </div>
+    <div id="iframe">
+        <iframe name="rightpanel"></iframe>
+    </div>
+    </div>
+   
+    
+</body>
+</html>
