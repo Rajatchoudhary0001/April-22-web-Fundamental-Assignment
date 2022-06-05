@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>cuberoot</title>
+</head>
+<body>
+    <div class="container">
+        <button id="btn" onclick="cubefunc()">odd number</button>
+    <p id="output"></p>
+    </div>
+  <script>
+     function cubefunc(){
+         let n=parseInt(prompt("enter number"));
+           let sum=0;
+           let text="";
+           if (n!==null){
+             for(i=1;i<=n;i++){
+              if(i%2!==0){
+              sum= sum + i ;
+              text=text +i+"+";
+
+            }
+           }
+           document.getElementById("output").innerHTML=text+"="+sum;
+        }
+        else{
+            document.getElementById("output").innerHTML="sorry not odd value";
+
+        }
+
+     }
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>cuberoot</title>
+</head>
+<body>
+    <div class="container">
+        <button id="btn" onclick="cubefunc()">cube of any number</button>
+    <p id="output"></p>
+    </div>
+  <script>
+     function cubefunc(){
+         let n=parseInt(prompt("enter number"));
+           let text=0;
+           if (n!=null){
+           for(i=1;i<=n;i++){
+               text= text + (i*i*i) +'<br>';
+           }
+           document.getElementById("output").innerHTML=text;
+        }
+        else{
+            document.getElementById("output").innerHTML="sorry empty value";
+
+        }
+
+     }
+  </script>
+</body>
+</html>
